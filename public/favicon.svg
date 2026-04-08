@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background bordeaux sombre -->
+  <rect width="512" height="512" fill="#5E0D0A"/>
+
+  <!-- Clé vintage style dessin main levée -->
+  <g transform="translate(256, 256) scale(0.85)" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- === TÊTE - Quatrefeuille style hand-drawn === -->
+
+    <!-- Contour extérieur de la tête (forme organique) -->
+    <path d="M 0 -145
+             C 25 -150, 45 -135, 50 -110
+             C 58 -95, 62 -75, 55 -55
+             C 52 -45, 48 -38, 42 -32
+             C 55 -25, 68 -15, 75 5
+             C 82 25, 78 50, 65 65
+             C 55 78, 40 85, 25 85
+             C 18 90, 12 98, 8 108
+             C 5 115, 2 120, 0 122
+             C -2 120, -5 115, -8 108
+             C -12 98, -18 90, -25 85
+             C -40 85, -55 78, -65 65
+             C -78 50, -82 25, -75 5
+             C -68 -15, -55 -25, -42 -32
+             C -48 -38, -52 -45, -55 -55
+             C -62 -75, -58 -95, -50 -110
+             C -45 -135, -25 -150, 0 -145 Z"
+          stroke-width="8"/>
+
+    <!-- Lobe HAUT - ovale intérieur -->
+    <ellipse cx="0" cy="-95" rx="28" ry="32" stroke-width="6"/>
+    <ellipse cx="0" cy="-95" rx="12" ry="14" stroke-width="5"/>
+
+    <!-- Lobe GAUCHE - ovale intérieur -->
+    <ellipse cx="-52" cy="-5" rx="28" ry="32" transform="rotate(-15 -52 -5)" stroke-width="6"/>
+    <ellipse cx="-52" cy="-5" rx="12" ry="14" stroke-width="5"/>
+
+    <!-- Lobe DROIT - ovale intérieur -->
+    <ellipse cx="52" cy="-5" rx="28" ry="32" transform="rotate(15 52 -5)" stroke-width="6"/>
+    <ellipse cx="52" cy="-5" rx="12" ry="14" stroke-width="5"/>
+
+    <!-- Centre - ovale vertical -->
+    <ellipse cx="0" cy="25" rx="22" ry="35" stroke-width="6"/>
+    <ellipse cx="0" cy="25" rx="10" ry="16" stroke-width="5"/>
+
+    <!-- === COLLET === -->
+    <ellipse cx="0" cy="95" rx="22" ry="12" stroke-width="6"/>
+    <path d="M -18 107 C -15 115, -12 118, 0 120 C 12 118, 15 115, 18 107" stroke-width="5"/>
+
+    <!-- === TIGE - style irrégulier === -->
+    <path d="M -12 120
+             C -13 140, -12 160, -11 180
+             C -12 200, -13 220, -12 240
+             L -12 290" stroke-width="6"/>
+    <path d="M 12 120
+             C 13 140, 12 160, 11 180
+             C 12 200, 13 220, 12 240
+             L 12 290" stroke-width="6"/>
+
+    <!-- Lignes horizontales sur la tige -->
+    <path d="M -11 145 C -5 146, 5 146, 11 145" stroke-width="3"/>
+    <path d="M -11 175 C -5 176, 5 176, 11 175" stroke-width="3"/>
+    <path d="M -11 205 C -5 206, 5 206, 11 205" stroke-width="3"/>
+    <path d="M -11 235 C -5 236, 5 236, 11 235" stroke-width="3"/>
+    <path d="M -11 265 C -5 266, 5 266, 11 265" stroke-width="3"/>
+
+    <!-- === PANNETON - dents irrégulières === -->
+    <!-- Jonction tige-panneton -->
+    <path d="M -12 290 L -12 295 C -10 298, -5 300, 0 302 C 5 300, 10 298, 12 295 L 12 290" stroke-width="5"/>
+
+    <!-- Base du panneton -->
+    <path d="M -12 295 L -12 330 L -55 330" stroke-width="6"/>
+    <path d="M 12 295 L 12 310" stroke-width="6"/>
+
+    <!-- Grande dent crochet à gauche -->
+    <path d="M -55 330
+             C -60 325, -62 315, -58 305
+             C -55 298, -48 292, -40 295
+             C -35 297, -32 302, -30 310
+             L -30 320" stroke-width="5"/>
+
+    <!-- Encoche en S -->
+    <path d="M -30 320 L -30 330 L -12 330" stroke-width="5"/>
+
+    <!-- Dent intérieure -->
+    <path d="M -40 315 C -38 318, -35 320, -32 318" stroke-width="4"/>
+
+    <!-- Petites gouttes décoratives -->
+    <circle cx="-45" cy="312" r="3" fill="#FFFFFF"/>
+    <circle cx="-38" cy="322" r="2" fill="#FFFFFF"/>
+    <ellipse cx="-22" cy="325" rx="3" ry="4" fill="#FFFFFF"/>
+
+  </g>
+</svg>

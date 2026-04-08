@@ -1,0 +1,11 @@
+# Robots.txt pour Maison Valfort
+# https://maisonvalfort.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://maisonvalfort.com/sitemap.xml
+
+# Bloquer les pages internes
+Disallow: /api/

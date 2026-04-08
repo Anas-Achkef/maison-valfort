@@ -1,0 +1,24 @@
+{
+  "name": "Maison Valfort | Conciergerie de Luxe",
+  "short_name": "Maison Valfort",
+  "description": "L'excellence au service de votre bien. Conciergerie haut de gamme pour locations saisonnières.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#6D0303",
+  "background_color": "#F5F3EF",
+  "orientation": "portrait-primary",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
