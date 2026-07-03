@@ -166,13 +166,14 @@ export default function Hero() {
           className={`w-full h-full object-cover transition-opacity duration-1000 ${
             videoVisible ? "opacity-100" : "opacity-0"
           }`}
+          poster="/header-poster.jpg"
           playsInline
           webkit-playsinline="true"
           preload="metadata"
           muted
           loop
         >
-          <source src="/new-header.mp4" type="video/mp4" />
+          <source src="/header-web.mp4" type="video/mp4" />
         </video>
 
         {/* Fond noir de fallback quand la vidéo charge */}
