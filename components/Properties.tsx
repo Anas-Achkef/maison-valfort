@@ -107,27 +107,25 @@ export default function Properties() {
           );
         }
 
-        // Animation des cartes au scroll
-        slides.forEach((slide, i) => {
-          gsap.fromTo(
-            slide,
-            { opacity: 0, x: 50 },
-            {
-              opacity: 1,
-              x: 0,
-              duration: 0.6,
-              delay: i * 0.1,
-              ease: "power2.out",
-              scrollTrigger: {
-                trigger: slide,
-                start: "left 90%",
-                toggleActions: "play none none reverse",
-                horizontal: true,
-                containerAnimation: undefined,
-              },
-            }
-          );
-        });
+        // Révélation des cartes déclenchée verticalement (le scroll horizontal
+        // est natif dans le conteneur, un ScrollTrigger horizontal ne s'y applique pas).
+        // Une fois révélées, les cartes restent visibles pendant le scroll latéral.
+        gsap.fromTo(
+          slides,
+          { opacity: 0, y: 30 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.6,
+            stagger: 0.12,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 75%",
+              toggleActions: "play none none reverse",
+            },
+          }
+        );
       }, section);
 
       return () => ctx.revert();
