@@ -107,25 +107,20 @@ export default function Properties() {
           );
         }
 
-        // Révélation des cartes déclenchée verticalement (le scroll horizontal
-        // est natif dans le conteneur, un ScrollTrigger horizontal ne s'y applique pas).
-        // Une fois révélées, les cartes restent visibles pendant le scroll latéral.
-        gsap.fromTo(
-          slides,
-          { opacity: 0, y: 30 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.6,
-            stagger: 0.12,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: section,
-              start: "top 75%",
-              toggleActions: "play none none reverse",
-            },
-          }
-        );
+        // IMPORTANT (mobile) : on ne masque JAMAIS les cartes.
+        // Le scroll horizontal est natif au conteneur, donc un ScrollTrigger ne s'y
+        // applique pas et laissait les cartes bloquées à opacity:0 → invisibles.
+        // Les cartes sont visibles par défaut (rendu serveur). On ajoute seulement une
+        // entrée douce au montage, sans ScrollTrigger, qui se termine toujours visible.
+        gsap.set(slides, { opacity: 1, y: 0 });
+        gsap.from(slides, {
+          opacity: 0,
+          y: 30,
+          duration: 0.6,
+          stagger: 0.12,
+          ease: "power2.out",
+          clearProps: "opacity,transform",
+        });
       }, section);
 
       return () => ctx.revert();
